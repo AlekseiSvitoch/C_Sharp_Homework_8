@@ -32,7 +32,7 @@ void OrderTheMatrix(int[,] matrix, int row, int col)
             for (int j = 0; j < matrix.GetLength(1) - 1; j++)
             {
                 int temp = 0;
-                if (matrix[i, j] > matrix[i, j + 1])
+                if (matrix[i, j] < matrix[i, j + 1])
                 {
                     temp = matrix[i, j];
                     matrix[i, j] = matrix[i, j + 1];
